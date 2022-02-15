@@ -29,7 +29,9 @@ const Main = () => {
                     </li>
                 </ul>
             </div>
-            <div className='main-img' />
+            <div className='mask'>
+                <div className='main-img' />
+            </div>
         </main>
     );
 }

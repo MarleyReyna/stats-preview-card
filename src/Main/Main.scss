@@ -60,13 +60,18 @@ main {
     }
   }
 
-  .main-img {
-    width: 100%;
-    height: auto;
-    background-image: url("./image-header-desktop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  .mask {
+    background-color: #ab5cdb;
+    .main-img {
+      width: 100%;
+      height: 100%;
+      background-image: url("./image-header-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      mix-blend-mode: multiply;
+      opacity: 0.75;
+    }
   }
 }
 
@@ -113,10 +118,12 @@ main {
       }
     }
 
-    .main-img {
-      width: 100%;
-      height: 350px;
-      background-image: url("./image-header-mobile.jpg");
+    .mask {
+      .main-img {
+        width: 100%;
+        height: 350px;
+        background-image: url("./image-header-mobile.jpg");
+      }
     }
   }
 }
@@ -157,8 +164,10 @@ main {
       }
     }
 
-    .main-img {
-      height: 240px;
+    .mask {
+      .main-img {
+        height: 240px;
+      }
     }
   }
 }
